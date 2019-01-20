@@ -4,10 +4,14 @@ class Dog
   def bark
     puts "woof!"
   end
-Pandabear = Dog.new 
-Pandabear.name = "Pandabear"
+  attr_accessor :name 
+  def name
+    @name
+  end
 
-Pandabear.name
+  def name=(name)
+    @name = name
+  end
 
 end
 
